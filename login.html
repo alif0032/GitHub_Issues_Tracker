@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DesyUI  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Fond Awsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <title>GitHub Issues Tracker | Login</title>
+</head>
+<body class="bg-[#F8FAFC] ">
+    <div class="min-h-screen bg-white max-w-md mx-auto flex flex-col items-center">
+         <section class="Upper-section">
+        <div class="header-content flex flex-col items-center py-5">
+            <img src="./assets/github-logo.png" alt="Github Logo">
+            <h1 class="font-bold text-3xl pt-3">Github Issues Tracker</h1>
+            <p class="text-[#64748B]">Sign in to manage your issues</p>
+        </div>
+
+    </section>
+
+    <section class="form-section">
+            <form class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+        <fieldset class="fieldset">
+            <label class="label">User Name</label>
+            <input id="input-userName" type="text" class="input validator" placeholder="Uer Name" required />
+            <p class="validator-hint hidden">Required</p>
+        </fieldset>
+
+        <label class="fieldset">
+            <span class="label">Password</span>
+            <input id="input-password" type="password" class="input validator" placeholder="Password" required />
+            <span class="validator-hint hidden">Required</span>
+        </label>
+
+        <button id="login-btn" class="btn btn-primary mt-4" type="submit">Login</button>
+        
+        </form>
+
+        <div class="flex flex-col items-center">
+             
+            
+        
+    <div class="flex items-center gap-4 my-6 w-full">
+
+        <hr class="flex-1 border-gray-300">
+
+        <span class="text-gray-500 text-sm font-medium">OR</span>
+
+        <hr class="flex-1 border-gray-300">
+
+     </div>
+
+
+        <p class="text-[#64748B]">Demo Creadentials</p>
+        <div class="bg-base-200 border-base-300 rounded-box w-xs border p-4 flex flex-col items-center m-4 mb-2">
+            <p><span class="font-bold">Username: </span>admin</p>
+            <p class=""><span class="font-bold">Password: </span>admin123</p>
+        </div>
+        </div>
+        
+
+    </section>
+    </div>
+   
+    <script src="./script/login.js" ></script>
+</body>
+</html>
+
